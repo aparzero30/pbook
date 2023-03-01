@@ -1,0 +1,38 @@
+<form (ngSubmit)="onSubmit()" id="frm1">
+  <a routerLink="">
+    <span class="material-symbols-outlined" id="close">close</span>
+  </a>
+
+  <span class="material-symbols-outlined" id="cont"> account_circle </span>
+
+  <div>
+    <span class="material-symbols-outlined">contact_page</span>
+    <input
+      type="text"
+      [(ngModel)]="newName"
+      placeholder="Name"
+      name="newName"
+    />
+  </div>
+
+  <div>
+    <span class="material-symbols-outlined">mail</span>
+    <input
+      type="text"
+      [(ngModel)]="newEmail"
+      placeholder="Email"
+      name="newEmail"
+    />
+  </div>
+
+  <div>
+    <span class="material-symbols-outlined">dialpad</span>
+    <input
+      type="text"
+      [(ngModel)]="newNumber"
+      placeholder="Phone"
+      name="Phone"
+    />
+  </div>
+  <button type="submit" id="btn">UPDATE</button>
+</form>

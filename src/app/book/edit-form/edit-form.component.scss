@@ -1,0 +1,71 @@
+@import "../../../styles.scss";
+
+form {
+  background-color: var(--primary-color);
+  width: 20%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vh;
+  position: fixed;
+  top: 25vh;
+  left: 40%;
+  z-index: 0;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  span {
+    color: var(--secondary-color);
+    user-select: none;
+  }
+  input {
+    width: 70%;
+    height: 1.5vw;
+    font-size: calc(var(--header-font) / 2vw);
+    border: none;
+    padding: 1px;
+    text-align: center;
+    font-family: var(--font);
+  }
+  div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vh;
+  }
+  input:focus {
+    outline: none;
+  }
+  button {
+    margin-top: 3vh;
+    height: 2vw;
+    width: 80%;
+    border-radius: 20px;
+    border: 0dvi;
+    font-family: var(--font);
+    cursor: pointer;
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+  }
+  input::placeholder {
+    color: gray;
+    font-style: italic;
+  }
+  #cont {
+    font-size: 5vw;
+    color: var(--icon-color);
+  }
+  #close {
+    width: 9%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 27vh;
+    cursor: pointer;
+  }
+}
+
+a {
+  color: white; /* or any other color of your choice */
+}

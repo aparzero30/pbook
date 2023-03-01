@@ -1,0 +1,41 @@
+<a routerLink="/add">
+  <span class="material-symbols-outlined" id="add"> add </span></a
+>
+
+<h1 class="pbook-title">PHONE<span style="color: indianred">x</span>BOOK</h1>
+
+<div *ngFor="let contact of contacts" class="wrapper2">
+  <div class="avatar">{{ contact.name.charAt(0).toUpperCase() }}</div>
+  <div class="info">
+    <h1>{{ contact.name.toUpperCase() }}</h1>
+    <h3>
+      <em>{{ contact.email }}</em>
+    </h3>
+    <h3>
+      <em>{{ contact.number }}</em>
+    </h3>
+  </div>
+  <div class="actions">
+    <a routerLink="/edit">
+      <span
+        class="material-symbols-outlined"
+        (click)="editContact(contact)"
+        id="edit"
+        >edit</span
+      >
+    </a>
+
+    <span
+      class="material-symbols-outlined"
+      (click)="deleteContact(contact)"
+      id="delete"
+      >delete</span
+    >
+  </div>
+</div>
+
+<!-- 
+  
+
+
+ -->

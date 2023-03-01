@@ -1,0 +1,32 @@
+<form (submit)="addContact()" class="frm" id="frm">
+  <a routerLink="">
+    <span class="material-symbols-outlined" id="close">close</span>
+  </a>
+  <span class="material-symbols-outlined" id="cont"> account_circle </span>
+
+  <div>
+    <span class="material-symbols-outlined">contact_page</span>
+    <input type="text" [(ngModel)]="newName" name="name" placeholder="Name" />
+  </div>
+
+  <div>
+    <span class="material-symbols-outlined">mail</span>
+    <input
+      type="text"
+      [(ngModel)]="newEmail"
+      name="email"
+      placeholder="Email"
+    />
+  </div>
+
+  <div>
+    <span class="material-symbols-outlined">dialpad</span>
+    <input
+      type="text"
+      [(ngModel)]="newNumber"
+      name="number"
+      placeholder="Phone"
+    />
+  </div>
+  <button type="submit" id="btn1">SAVE</button>
+</form>

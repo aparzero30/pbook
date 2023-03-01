@@ -1,0 +1,24 @@
+
+
+
+
+@import "../../../styles.scss";
+
+#add{
+    @include flexCenter;
+    background-color: var(--font-color);
+    user-select: none;
+    border-radius: 50%;
+    font-size: 2vw;
+    height: 3vw;
+    width: 3vw;
+    color: var(--secondary-color);
+    cursor: pointer;
+    z-index: 22;
+    position: fixed;
+    margin-right: 50%;
+    left:28.4vw;
+
+}
+
+
